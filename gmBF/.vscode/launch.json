@@ -1,0 +1,98 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "name": "调试 room.exe",
+          "type": "cppdbg",
+          "request": "launch",
+          "program": "${workspaceFolder}/room.exe",
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "${workspaceFolder}",
+          "environment": [],
+          "externalConsole": false,
+          "MIMode": "gdb",
+          "setupCommands": [
+              {
+                  "description": "Enable pretty-printing for gdb",
+                  "text": "-enable-pretty-printing",
+                  "ignoreFailures": true
+              }
+          ],
+          "preLaunchTask": "C/C++: g++.exe 生成活动文件",
+          "miDebuggerPath": "D:/AZBao/git/MinGw/mingw64/bin/gdb.exe",
+          "logging": {
+              "engineLogging": true
+          }
+      },
+      {
+          "name": "调试其他项目",
+          "type": "cppdbg",
+          "request": "launch",
+          "program": "${workspaceFolder}/其他项目.exe",
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "${workspaceFolder}",
+          "environment": [],
+          "externalConsole": false,
+          "MIMode": "gdb",
+          "setupCommands": [
+              {
+                  "description": "Enable pretty-printing for gdb",
+                  "text": "-enable-pretty-printing",
+                  "ignoreFailures": true
+              }
+          ],
+          "preLaunchTask": "C/C++: g++.exe 生成活动文件",
+          "miDebuggerPath": "D:/AZBao/git/MinGw/mingw64/bin/gdb.exe",
+          "logging": {
+              "engineLogging": true
+          }
+      },
+      {
+          "name": "C/C++ Runner: Debug Session",
+          "type": "cppdbg",
+          "request": "launch",
+          "args": [],
+          "stopAtEntry": false,
+          "externalConsole": true,
+          "cwd": "d:/Vs Code/colloge/daerSuanfa/dazuoye/JJQ/board.cpp",
+          "program": "d:/Vs Code/colloge/daerSuanfa/dazuoye/JJQ/build/Debug/outDebug",
+          "MIMode": "gdb",
+          "miDebuggerPath": "gdb",
+          "setupCommands": [
+              {
+                  "description": "Enable pretty-printing for gdb",
+                  "text": "-enable-pretty-printing",
+                  "ignoreFailures": true
+              }
+          ]
+      },
+      {
+          "name": "C/C++: gcc.exe 构建和调试活动文件",
+          "type": "cppdbg",
+          "request": "launch",
+          "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+          "args": [],
+          "stopAtEntry": false,
+          "cwd": "${fileDirname}",
+          "environment": [],
+          "externalConsole": false,
+          "MIMode": "gdb",
+          "miDebuggerPath": "D:/AZBao/git/MinGw/mingw64/bin/gdb.exe",
+          "setupCommands": [
+              {
+                  "description": "Enable pretty-printing for gdb",
+                  "text": "-enable-pretty-printing",
+                  "ignoreFailures": true
+              },
+              {
+                  "description": "将反汇编风格设置为 Intel",
+                  "text": "-gdb-set disassembly-flavor intel",
+                  "ignoreFailures": true
+              }
+          ],
+          "preLaunchTask": "C/C++: gcc.exe 编译 (MinGW 在 D:/AZBao/git)"
+      }
+  ]
+}
